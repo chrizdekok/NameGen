@@ -39,7 +39,13 @@ public class Main {
         for (int i = 0; i < length; i++) {
             sb.append(getChar());
         }
+        reset();
         return sb.toString();
+    }
+
+    static void reset() {
+        lastChar = CharType.none;
+        lastLastChar = CharType.none;
     }
 
     static char getChar() {
