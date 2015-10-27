@@ -1,4 +1,3 @@
-import java.security.SecureRandom;
 import java.util.Random;
 
 public class Main {
@@ -19,7 +18,7 @@ public class Main {
     static CharType lastChar = CharType.none;
     static CharType lastLastChar = CharType.none;
 
-    static Random random = new SecureRandom();
+    static Random random = new Random();
 
     public static void main(String args[]) {
         StringBuilder sb = new StringBuilder(7 * NUMBER_OF_SUGGESTIONS);
